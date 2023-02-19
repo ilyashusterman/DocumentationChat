@@ -1,0 +1,423 @@
+
+
+At a glance: Get everything set up to make the most of your AppsFlyer account. Understand the steps, timelines, and dependencies for getting your apps and your team on board.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Introduction
+This document helps marketer (app owner) product managers plan and execute their onboarding with AppsFlyer. For every item, the owner and approximate implementation time are provided.
+Note that:
+
+Step 1 (account setup) is done once by an account admin.
+Steps 2-4 are mandatory for every app added to AppsFlyer (except where stated as optional).
+Certain items from step 5 may be mandatory to meet your business goals.
+The time estimates in this article are intended as general guidance only. They are based on our experience working with many new customers, but we recognize that every app owner, app, and implementation is different. Your actual time requirements may vary.
+
+Step 1: Account setup
+
+
+
+Item
+Owner
+Time
+Comments
+
+
+
+
+
+Sign up with AppsFlyer
+Account admin
+5 mins
+Ideally, an account admin is a real AppsFlyer user who can receive important messages when needed.
+
+
+
+Add account users who will use the AppsFlyer dashboard, and set their permissions
+Account admin
+1 min per account user
+If adding an account user fails, it's often because their email address was added to a different account. To add them to the new account, either use a different email address or delete them from the other account.
+
+
+
+Result: Welcome! You now have an active AppsFlyer account and account users who can access it.
+
+
+ Tip
+New to AppsFlyer and wonder what it can do for you? Watch this 6-minute video.
+
+Step 2: App setup
+
+Complete these items for every app you want to work with in AppsFlyer
+
+
+Item
+Owner
+Time
+Comments
+
+
+
+
+
+Add your app to the AppsFlyer account
+
+Account admin
+1 min
+
+If adding an app fails, it's often because it was previously defined in a different account (typically an ad agency that your marketers work with). Contact your CSM or hello@appsflyer.com to transfer the app to your account. 
+See additional troubleshooting steps for adding apps.
+
+
+
+Set the app time zone and currency
+
+Account admin
+1 min 
+ 
+
+
+Set the app'sre-attribution window (on the App settings page)
+
+Account admin
+1 min 
+The re-attribution window is the period, starting from the date of the first install, during which re-installs from the same device are not attributed as new installs. The default value is 90 days, which you can customize as needed. 
+
+
+[Optional] Migrate existing user devices into AppsFlyer
+
+Account admin(with the assistance of your AppsFlyer CSM or the support team at hello@appsflyer.com)
+
+2 hours
+If your app already has a substantial user base, consider migrating them into AppsFlyer to avoid double charges.
+
+
+
+Result: Your apps are now defined in the AppsFlyer dashboard.
+Step 3: SDK integration
+
+Complete these items for every app you've defined in AppsFlyer (step 2)
+
+
+Item
+Owner
+Time
+Comments
+
+
+
+
+
+Consider the available options and select the SDK functionalities you want your app to use
+
+Product manager
+1 hour
+
+
+Some considerations beyond basic attribution:
+
+Will your campaigns deep link users into the app?
+Will the app need to access attribution or deep-linking data?
+Should AppsFlyer data contain your Customer User ID for reference?
+How will you implement privacy settings for iOS 14+ devices? Will you measure uninstalls, run cross-promotion campaigns, and more?
+
+
+Do you have a CTV app? See our CTV overview.
+
+
+
+
+Select which in-app events to record
+Product manager
+1 hour 
+
+Recording the post-installation events your users perform in the app helps you better understand the quality of your users.
+Save yourself some time by using our comprehensive list of recommended in-app events and parameters for your vertical. Save your developers time (and make them happy) with ready-made code snippets for each event.
+
+
+
+Select methods for retrieving attribution /deep-linking data
+Product manager
+30 mins
+
+Learn more about the available methods:
+
+Pull API
+Push API
+Unified deep linking API
+Get conversion data
+
+
+
+
+Implementation by developer
+App developer
+3 hours
+
+AppsFlyer resources for your developers:
+
+Android
+iOS
+Unity
+Windows phone
+Other platforms
+
+
+
+
+
+Integration testing 
+Product manager/App developer
+1 hour
+
+You can test your SDK integration before or after your app is live in the app store. You can use debug apps to keep your app data clean.
+Be sure to register your test devices.
+
+
+
+Release new app version
+Product manager
+1 hour
+
+Prepare for iOS App Store review.
+
+
+
+Result: Your apps are ready for install attribution, in-app event measurement, and other AppsFlyer functionalities that won’t require additional dev resources.
+Step 4: Attribution setup
+
+Complete these items for every app you've defined in AppsFlyer (step 2)
+
+
+Item
+Owner
+Time
+Comments
+
+
+
+
+
+Set up paid media sources for attribution in AppsFlyer
+
+Product manager/Marketer
+15 mins per media source
+
+Learn about attributing Self Reporting Networks (SRNs), specifically:
+
+Google Ads
+Facebook Ads
+Apple Search Ads
+
+GMP (Doubleclick)
+
+Learn about attributing non-SRN ad networks:
+
+Other integrated partners
+AppsFlyer attribution link structure and parameters
+
+
+
+
+Use OneLink to attribute owned media sources: mobile websites, social media, user invites, and more
+Product manager
+1 hour
+Learn about OneLink-based solutions for your owned-media use cases
+
+
+Owned media developer implementation
+App developer
+0-6.5 hours (depending on the implemented solutions)
+
+For developers: Getting started with Deep linking
+
+
+
+Set up attribution windows
+Product manager
+2 mins per media source
+
+Learn more: Click and view-through lookback windows explained
+
+
+
+[Optional] Enable retargeting campaigns
+Product manager
+2 mins
+
+Activate Retargeting on the App Settings page.
+Learn more: Retargeting guide
+
+
+
+
+Result: All media sources bringing traffic into your apps are attributed whenever new or returning users engage with them.
+Step 5: Additional setup
+
+Complete relevant items for every app you've defined in AppsFlyer (step 2)
+
+
+Item
+Owner
+Additional resources
+
+
+
+
+
+Optimize user acquisition campaigns by recording revenue
+
+Product manager/Developers
+
+
+In-app purchase validations
+Ad monetization
+User subscriptions
+
+
+
+
+
+Learn about methods to aggregate and view marketing cost data
+
+Product manager
+
+Xpend—cost aggregation overview
+
+
+
+
+Set up other 3rd-party platforms your app works with
+
+Product manager/Developers
+
+
+mParticle
+
+Segment 
+Mixpanel
+Amplitude
+
+Adobe Analytics (Omniture)
+Braze
+
+
+
+
+Check out these AppsFlyer premium features that can save you time and money.
+Product manager
+
+
+Audiences
+Pivot table
+Data Locker
+
+
+
+
+Protect your campaigns from fraud and mistargeting
+Product manager
+
+
+Protect360—Anti-fraud solution
+Use Validation rules to ensure campaigns are not mistargeted
+Set Live Alerts to monitor a wide range of KPIs in real-time
+
+
+
+
+Implement Server-to-Server API for in-app events reported outside the app
+Product manager/Developers
+
+S2S REST API
+
+
+
+
+Measure uninstall rates for your media sources 
+
+Product manager/Developers
+Uninstall measurement
+
+
+Gain a unified view of customer journeys across channels, platforms, and devices
+Product manager/Developers
+
+People-Based Attribution (PBA)
+
+
+
+
+Ensure compliance with privacy regulations: GDPR, CCPA, etc.
+
+Product manager/Developers
+Allowing users to opt-out of attribution.
+
+
+
+Enrich your knowledge
+
+Recommended for all AppsFlyer users
+
+
+Item
+Time
+
+
+
+
+
+Get to know the AppsFlyer overview dashboard
+
+15 mins
+
+
+
+Explore the difference between Lifetime Value (LTV) data and activity data in AppsFlyer (solving the mystery of why the in-app events summary differs between the Overview and Activity dashboards)
+
+15 mins
+
+
+Understand the AppsFlyer attribution model
+
+30 mins
+
+
+
+Learn about aggregate reporting tools and analytics
+
+30 mins
+
+
+
+Learn about raw data reporting
+
+30 mins
+
+
+
+
+Related
+
+
+ Tip
+New to UA (user acquisition)? Learn all about the biggest challenges and critical elements of planning, executing, and continuously optimizing your user acquisition efforts.
+
+
+
+ Note
+New to AppsFlyer but not a marketer? No worries!Choose the guide for you below and get started:
+
+Getting started for agencies
+Getting started for ad networks
+
