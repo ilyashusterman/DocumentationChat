@@ -2,3 +2,5 @@
 /deprecated/questions/logs/
 /venv/
 .idea
+/models/distilgpt2-appsflyers2/
+/models/distilgpt2-finetuned-wikitext2/
